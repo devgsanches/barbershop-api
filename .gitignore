@@ -3,3 +3,6 @@ node_modules
 .env
 
 /generated/prisma
+
+# PostgreSQL data directory
+.postgres-data/
