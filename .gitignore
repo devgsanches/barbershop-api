@@ -5,4 +5,4 @@ node_modules
 /generated/prisma
 
 # PostgreSQL data directory
-/postgres-data/
+/.postgres-data
