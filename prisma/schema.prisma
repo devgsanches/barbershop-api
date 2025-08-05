@@ -10,8 +10,11 @@ datasource db {
 
 model User {
   id        String    @id @default(uuid())
+  googleId  String?
+  imageUrl  String?
   name      String
-  email     String
+  email     String    @unique
+  password  String?  // ← precisa disso para login com senha
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
   bookings  Booking[]
